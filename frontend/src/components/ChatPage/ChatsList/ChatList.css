@@ -1,0 +1,41 @@
+/* Styles for the friends list */
+.room-list-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-list-topic{
+  color: black;
+  font-size: medium;
+  margin-bottom: 5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+}
+
+.chats-list-container {
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.chats-list-section{
+  overflow-y: auto;
+  height: 200px;
+}
+
+.chats-list-container h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.chats-list-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chats-list-container li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}

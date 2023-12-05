@@ -1,0 +1,104 @@
+/* Styling for the container, adjust as needed */
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+/* Styling for the modal background */
+.modal-background {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+
+}
+
+/* Styling for the modal */
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  height: 25%;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the modal content */
+.modal-content {
+  /* max-width: 400px; */
+  width: 100%;
+}
+
+/* Styling for the close button inside the modal */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Styling for the form inside the modal */
+#roomForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#roomForm input[type="text"] {
+  margin-top: 10px;
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.success-message {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.failed-message{
+  background-color: #af614c;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.success-message.active,.failed-message.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 90%;
+  }
+}

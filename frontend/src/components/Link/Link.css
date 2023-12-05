@@ -1,0 +1,16 @@
+/* AnimatedLink.css */
+.animated-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.emoji {
+  margin-left: 10px;
+}
+
+.animated-link:hover {
+  transform: scale(1.2);
+}

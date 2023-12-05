@@ -1,0 +1,94 @@
+/* ClickableTab.css */
+.clickable-tab {
+  /* Basic styles */
+  display: inline-block;
+  border: none;
+  background-color: #075E54;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Flexbox for text layout */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.notification{
+  /* position: absolute; */
+  right: 10px;
+  background-color: #25D366;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.clickable-tab-selectedChat {
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: teal;
+  margin-bottom: 10px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.interactionContainer{
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* Styles for primary text */
+.primary-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Styles for secondary text */
+.secondary-text {
+  font-size: 12px;
+  color: black;
+  font-weight:bolder;
+}
+
+/* Color transition on hover */
+.clickable-tab:hover {
+  background-color: teal;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .clickable-tab {
+    /* Adjust styles for smaller screens */
+    padding: 8px 16px;
+  }
+
+  .primary-text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .clickable-tab {
+    /* Adjust styles for medium-sized screens */
+    padding: 12px 24px;
+  }
+
+  .primary-text {
+    font-size: 18px;
+  }
+}
+
+/* Add more media queries as needed for larger screens */

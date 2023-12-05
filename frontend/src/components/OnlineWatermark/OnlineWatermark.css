@@ -1,0 +1,14 @@
+.watermark {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out;
+    max-width: min-content;
+    pointer-events: none; /* Allow interaction with elements beneath the watermark */
+  }
+  .watermark-text{
+    opacity: 1;
+  }

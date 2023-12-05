@@ -1,0 +1,37 @@
+.toast-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: opacity 0.3s;
+  opacity: 0;
+  display: none;
+}
+
+.toast-container.show {
+  opacity: 1;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  max-width: 400px;
+  margin: 0 10px;
+}
+.success {
+  background-color: #4caf50;
+}
+
+.failure {
+  background-color: #f44336;
+}

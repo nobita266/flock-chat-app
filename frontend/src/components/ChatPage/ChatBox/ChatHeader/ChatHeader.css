@@ -1,0 +1,27 @@
+/* ChatHeader.css */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #075E54;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.627);
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 600px (e.g., mobile phones) */
+@media (max-width: 600px) {
+  .chat-header {
+    flex-direction: column;
+  }
+}
+
+/* For screens between 600px and 900px (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .chat-header {
+    flex-direction: column;
+  }
+}

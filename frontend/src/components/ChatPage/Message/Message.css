@@ -1,0 +1,87 @@
+/* Message.css */
+.message {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 60%;
+  width: fit-content;
+  min-width: 30%;
+  font-weight: 500;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.627);
+
+}
+
+.sent-by-user {
+  margin-left: auto;
+  margin-right: 10px;
+  align-items: flex-end;
+  background-color: #128C7E;
+  color: white;
+}
+
+.sent-by-buddy {
+  margin-right: 10px;
+  margin-right: auto;
+  align-items: flex-start;
+  background-color: #075E54;
+  color: white;
+
+}
+
+.name-sent-by-buddy {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  align-self: flex-start;
+}
+
+.content-sent-by-buddy {
+  font-size: 16px;
+  margin-bottom: 8px;
+  align-self: flex-end;
+}
+
+.time-sent-by-buddy {
+  font-size: 10px;
+  align-self: flex-end;
+}
+
+.name-sent-by-user {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  align-self: flex-end;
+}
+
+.content-sent-by-user {
+  font-size: 16px;
+  margin-bottom: 8px;
+  align-self: flex-start;
+}
+
+.time-sent-by-user {
+  font-size: 10px;
+  align-self: flex-start;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .message {
+    max-width: 70%;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .message {
+    max-width: 60%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+/* Add more media queries as needed for larger screens */

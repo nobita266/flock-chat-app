@@ -1,0 +1,36 @@
+/* Basic layout styles */
+.chat-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chat-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.friends-list {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.chat-box {
+  flex: 2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+
+  .friends-list {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .side-drawer {
+    right: 0;
+  }
+}
